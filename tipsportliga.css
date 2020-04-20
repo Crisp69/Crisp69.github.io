@@ -24,8 +24,7 @@ div.side{
 	
 }
 table.table_bar{
-	background-color: #3048af;
-	padding: 2px;
+	
 	
 	text-align: center;
 }
@@ -73,3 +72,4 @@ table th{
 table.tabulka_B tr:nth-child(odd) td{
 	background-color: #c5c5c5;
 }
+
