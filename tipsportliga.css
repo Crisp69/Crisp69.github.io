@@ -73,3 +73,78 @@ table.tabulka_B tr:nth-child(odd) td{
 	background-color: #c5c5c5;
 }
 
+table.tabulka_left tr:nth-child(odd) td{
+	background-color: #c5c5c5;
+}
+
+table.tabulka_right tr:nth-child(odd) td{
+	background-color: #c5c5c5;
+}
+table.tabulka_vychod tr:nth-child(odd) td{
+	background-color: #c5c5c5;
+}
+table.tabulka_zapad tr:nth-child(odd) td{
+	background-color: #c5c5c5;
+}
+
+table.tabulka_right tr:nth-child(odd) td{
+	background-color: #c5c5c5;
+}
+table.tabulka_B tr:nth-child(odd) td{
+	background-color: #c5c5c5;
+}
+
+table.tabulka_right{
+	text-align: left;
+	background-color: white;
+	border: 1px solid #94a1d7;
+	border-collapse: collapse;
+}
+
+
+
+
+table.tabulka_left{
+	text-align: left;
+	background-color: white;
+	border: 1px solid #94a1d7;
+	border-collapse: collapse;
+	font-size: 15px;
+}
+
+table.tabulka_zapad{
+	text-align: left;
+	background-color: white;
+	border: 1px solid #94a1d7;
+	border-collapse: collapse;
+	font-size: 15px;
+
+}
+
+table.tabulka_vychod{
+	text-align: left;
+	background-color: white;
+	border: 1px solid #94a1d7;
+	border-collapse: collapse;
+	font-size: 15px;
+	
+}
+
+table.tabulka_right{
+	text-align: left;
+	background-color: white;
+	border: 1px solid #94a1d7;
+	border-collapse: collapse;
+}
+
+#divLeft{
+	width: 25%;
+	float: left;
+}
+
+#divRight{
+	width: 20%;
+	float: left;
+}
+
+
