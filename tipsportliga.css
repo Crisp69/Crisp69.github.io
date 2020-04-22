@@ -123,6 +123,14 @@ table.tabulka_left{
 	float: left;
 }
 
-
+.container{
+			width: 80%;
+			height: auto;
+			
+			display:flex;
+			flex-direction:row;
+			justify-content:none;
+			flex-flow: row-reverse wrap;
+		}
 
 
