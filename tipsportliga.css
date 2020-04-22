@@ -107,44 +107,16 @@ table.tabulka_right{
 table.tabulka_left{
 	text-align: left;
 	background-color: white;
-	border: 1px solid #94a1d7;
 	border-collapse: collapse;
 	font-size: 15px;
 }
 
-table.tabulka_zapad{
-	text-align: left;
-	background-color: white;
-	border: 1px solid #94a1d7;
-	border-collapse: collapse;
-	font-size: 15px;
 
-}
-
-table.tabulka_vychod{
-	text-align: left;
-	background-color: white;
-	border: 1px solid #94a1d7;
-	border-collapse: collapse;
-	font-size: 15px;
-
-}
-
-table.tabulka_right{
-	text-align: left;
-	background-color: white;
-	border: 1px solid #94a1d7;
-	border-collapse: collapse;
-}
 
 #divLeft{
 	width: 25%;
 	float: left;
 }
 
-#divRight{
-	width: 20%;
-	float: left;
-}
 
 
