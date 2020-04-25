@@ -9,6 +9,10 @@ body{
 
 }
 
+p{
+	color: black;
+}
+
 div.teams{
 	
 	border: 5px;
@@ -108,7 +112,7 @@ table.tabulka_left{
 	background-color: white;
 	border-collapse: collapse;
 	font-size: 15px;
-	
+
 }
 
 
