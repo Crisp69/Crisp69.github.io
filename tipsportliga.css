@@ -2,7 +2,9 @@ div.box{
 	text-align: center;
 }
 
-
+body{
+	background-color: #459BC4;
+}
 p{
 	color: black;
 }
