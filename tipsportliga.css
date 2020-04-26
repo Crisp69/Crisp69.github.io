@@ -3,8 +3,14 @@ div.box{
 }
 
 body{
-	background-color: #6CA6C2;
+    background: url(http://getwallpapers.com/wallpaper/full/c/d/a/320050.jpg);
+
 }
+
+.container{
+  
+}
+
 p{
 	color: black;
 }
