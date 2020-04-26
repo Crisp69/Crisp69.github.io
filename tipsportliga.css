@@ -235,14 +235,14 @@ table.tabulka_left{
 
 @media (max-width: 1100px){
 
-		.jumbotron  .container .conatinerA .box  .teams{
+		.jumbotron  .container .conatinerA .box  .teams .zapasy{
 			flex-basis: 50%;
 		}
 	}
 
 	@media (max-width: 800px){
 
-		.jumbotron  .jumbotron  .teams{
+		.jumbotron  .jumbotron  .teams .zapasy{
 			flex-basis: 100%;
 		}
 	}
