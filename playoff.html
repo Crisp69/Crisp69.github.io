@@ -86,14 +86,15 @@
       <div class="matchups">
         <div class="matchup">
           <div class="participants">
-            <div class="participant winner"><span></span></div>
-            <div class="participant"><span></span></div>
+            <div class="participant winner"><span style="font-size: 15px;color: #AB2119;"><b>1.Východ</b></span></div>
+            <div class="participant"><span style="font-size: 15px;color: #AB2119;"><b>4.Východ</b></span></div>
           </div>
         </div>
         <div class="matchup">
           <div class="participants">
-            <div class="participant"><span></span></div>
-            <div class="participant winner"><span></span></div>
+
+            <div class="participant"><span style="font-size: 15px;color: #AB2119;"><b>2.Východ</b></span></div>
+            <div class="participant winner"><span style="font-size: 15px;color: #AB2119;"><b>3.Východ</b></span></div>
           </div>
         </div>
       </div>
@@ -106,14 +107,14 @@
       <div class="matchups">
         <div class="matchup">
           <div class="participants">
-            <div class="participant"><span></span></div>
-            <div class="participant winner"><span></span></div>
+            <div class="participant"><span style="font-size: 15px;color: #308AB6;"><b>1.Západ</b></span></div>
+            <div class="participant winner"><span style="font-size: 15px;color: #308AB6;"><b>4.Západ</b></span></div>
           </div>
         </div>
         <div class="matchup">
           <div class="participants">
-            <div class="participant"><span></span></div>
-            <div class="participant winner"><span></span></div>
+            <div class="participant"><span style="font-size: 15px;color: #308AB6;"><b>2.Západ</b></span></div>
+            <div class="participant winner"><span style="font-size: 15px;color: #308AB6;"><b>3.Západ</b></span></div>
           </div>
         </div>
       </div>
@@ -128,14 +129,14 @@
       <div class="matchups">
         <div class="matchup">
           <div class="participants">
-            <div class="participant winner"><span></span></div>
-            <div class="participant"><span></span></div>
+            <div class="participant winner"><span style="font-size: 15px;color: #AB2119;"><b>1/4.Východ</b></span></div>
+            <div class="participant"><span style="font-size: 15px;color: #AB2119;"><b>2/3.Východ</b></span></div>
           </div>
         </div>
         <div class="matchup">
           <div class="participants">
-            <div class="participant winner"><span></span></div>
-            <div class="participant"><span></span></div>
+            <div class="participant winner"><span style="font-size: 15px;color: #308AB6;"><b>1/4.Západ</b></span></div>
+            <div class="participant"><span style="font-size: 15px;color: #308AB6;"><b>2/3.Západ</b></span></div>
           </div>
         </div>
       </div>
@@ -150,8 +151,8 @@
       <div class="matchups">
         <div class="matchup">
           <div class="participants">
-            <div class="participant winner"><span></span></div>
-            <div class="participant"><span></span></div>
+            <div class="participant winner"><span style="font-size: 15px;color: #AB2119;"><b>VÍŤAZ - Východ</b></span></div>
+            <div class="participant"><span style="font-size: 15px;color: #308AB6;"><b>VÍŤAZ - Západ</b></span></div>
           </div>
         </div>
       </div>
@@ -209,19 +210,14 @@
 }
 .bracket .round .winners > div.matchups .matchup .participants .participant.loser {
   color: black;
-  border-color: #dc563f;
+  border-color: none;
 }
 .bracket .round .winners > div.matchups .matchup .participants .participant:not(:last-child) {
-  border-bottom: thin solid #706987;
+ 
 }
-.bracket .round .winners > div.matchups .matchup .participants .participant span {
-  margin: 0 1.25rem;
-  line-height: 3;
-  font-size: 1rem;
-  font-family: "Roboto Slab";
-}
+
 .bracket .round .winners > div.connector.filled .line, .bracket .round .winners > div.connector.filled.bottom .merger:after, .bracket .round .winners > div.connector.filled.top .merger:before {
-  border-color: #706987;
+  border-color: none;
 }
 .bracket .round .winners > div.connector .line, .bracket .round .winners > div.connector .merger {
   box-sizing: border-box;
@@ -230,8 +226,7 @@
   vertical-align: top;
 }
 .bracket .round .winners > div.connector .line {
-  border-bottom: thin solid #706987;
-  height: 4rem;
+  
 }
 .bracket .round .winners > div.connector .merger {
   position: relative;
@@ -243,8 +238,8 @@
   box-sizing: border-box;
   width: 100%;
   height: 50%;
-  border: 0 solid;
-  border-color: #706987;
+  
+ 
 }
 .bracket .round .winners > div.connector .merger:before {
   border-right-width: thin;
