@@ -237,3 +237,18 @@ table.tabulka_left{
 .bracket .round.finals .winners .connector .line {
   height: 1.5rem;
 }
+
+
+@media (max-width: 1100px){
+
+		.jumbotron  .container .conatinerA .box  .teams{
+			flex-basis: 50%;
+		}
+	}
+
+	@media (max-width: 800px){
+
+		.jumbotron  .jumbotron  .teams{
+			flex-basis: 100%;
+		}
+	}
