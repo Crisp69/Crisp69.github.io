@@ -41,7 +41,7 @@ color: black;
 table.tabulka_A{
 	text-align: left;
 	background-color: white;
-	border: 1px solid #94a1d7;
+	
 	border-collapse: collapse;
 }
 
@@ -60,7 +60,7 @@ table.tabulka_A tr:nth-child(odd) td{
 table.tabulka_B{
 	text-align: left;
 	background-color: white;
-	border: 1px solid #94a1d7;
+	
 	border-collapse: collapse;
 }
 
