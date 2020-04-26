@@ -63,29 +63,12 @@ table.tabulka_left tr:nth-child(odd) td{
 	background-color: #c5c5c5;
 }
 
-table.tabulka_right tr:nth-child(odd) td{
-	background-color: #c5c5c5;
-}
-table.tabulka_vychod tr:nth-child(odd) td{
-	background-color: #c5c5c5;
-}
-table.tabulka_zapad tr:nth-child(odd) td{
-	background-color: #c5c5c5;
-}
 
-table.tabulka_right tr:nth-child(odd) td{
-	background-color: #c5c5c5;
-}
+
 table.tabulka_B tr:nth-child(odd) td{
 	background-color: #c5c5c5;
 }
 
-table.tabulka_right{
-	text-align: left;
-	background-color: white;
-	border-collapse: collapse;
-	font-size: 15px;
-}
 
 
 
