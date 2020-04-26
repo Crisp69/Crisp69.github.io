@@ -41,7 +41,6 @@ table.tabulka_A{
 	border-collapse: collapse;
 }
 
-
 table.tabulka_A tr:nth-child(odd) td{
 	background-color: #c5c5c5;
 }
@@ -53,25 +52,9 @@ table.tabulka_B{
 	border-collapse: collapse;
 }
 
-
-
 table.tabulka_B tr:nth-child(odd) td{
 	background-color: #c5c5c5;
 }
-
-table.tabulka_left tr:nth-child(odd) td{
-	background-color: #c5c5c5;
-}
-
-
-
-table.tabulka_B tr:nth-child(odd) td{
-	background-color: #c5c5c5;
-}
-
-
-
-
 
 table.tabulka_left{
 	text-align: left;
@@ -81,6 +64,9 @@ table.tabulka_left{
 
 }
 
+table.tabulka_left tr:nth-child(odd) td{
+	background-color: #c5c5c5;
+}
 
 
 #divLeft{
