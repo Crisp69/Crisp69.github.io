@@ -40,28 +40,9 @@ color: black;
  
 }
 
-table.tabulka_A{
-	text-align: left;
-	background-color: white;
-	border: 1px solid #c5c5c5;
-	border-collapse: collapse;
-}
-
-table.tabulka_A tr:nth-child(odd) td{
-	background-color: #c5c5c5;
-}
-
-table.tabulka_B{
-	text-align: left;
-	background-color: white;
-	border: 1px solid #c5c5c5;
-	border-collapse: collapse;
-}
 
 
-table.tabulka_B tr:nth-child(odd) td{
-	background-color: #c5c5c5;
-}
+
 
 table.tabulka_left{
 	text-align: left;
