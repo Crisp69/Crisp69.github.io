@@ -83,9 +83,9 @@
  <table class="table table-striped" align="center">
     <tr  class="bg-info" >
         <th data-column="name" data-order="desc" width="50">Meno &#9650</th>
-        <th data-column="body" data-order="desc" width="50">Kanadské bodovanie &#9650</th>
-        <th data-column="goly" data-order="desc" width="50">Góly &#9650</th>
-        <th data-column="asists" data-order="desc" width="50">Asistencie &#9650</th>
+        <th data-column="body" data-order="desc" width="50">Úspešnosť &#9650</th>
+        <th data-column="goly" data-order="desc" width="50">Inkasované góly &#9650</th>
+        
     </tr>
 
     <tbody id="myTable" >
@@ -100,24 +100,6 @@
 
   <script src="./src/tablesort.js"></script>
 </body>
-<!DOCTYPE html>
-<head>
-  <title>Sorting Tables w/ JavaScript</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta charset="utf-8" />
-</head>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -211,8 +193,7 @@ div.brankar{
               <td >${data[i].name}</td>
               <td >${data[i].body}</td>
               <td >${data[i].goly}</td>
-              <td >${data[i].asists}</td>
-            </tr>`
+             </tr>`
       table.innerHTML += row
 
 
