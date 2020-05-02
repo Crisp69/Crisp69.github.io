@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Utok</title>
-
-  <link rel="stylesheet" type="text/css" href="tipsportliga.css">
+  <title>Sorting Tables w/ JavaScript</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="tablesort.js">
+   
+  <link rel="stylesheet" type="text/css" href="tablesort.css">
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
 </head>
+
 <body>
 
 	<div class="container">  
@@ -73,52 +76,122 @@
   </div><!-- /.container-fluid -->
 </nav>
 
-		<div align="center"><img src="images/utok.png"></div>
 
+<div>
+  <table class="table-sortable" align="center">
+    <thead>
+      <tr>
+        <th width="170">Meno</th>
+        <th width="80">Body</th>
+        <th width="60">Góly</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+       <tr>
 
+        <td style="text-align: left"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+       
+      </tr>
+      <tr>
+        <td style="text-align: left"></td>
+        
+         <td></td>
+         <td></td>
+         <td></td>
+       
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+     
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+       
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+       
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+       
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+       
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+       
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+       
+      </tr>
+      <tr>
+       <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-			
-		
-			<br>
+  <br>
 			<p align="center"><img src="images/slovan.png" height="40" align="center"><img src="images/piestany.png" height="40"><img src="images/trencin.png" height="40"><img src="images/Skalica.png" height="40"><img src="images/zvolen.png" height="40"><img src="images/martin.png" height="40"><img src="images/banska_bystrica.png" height="40"><img src="images/detva.png" height="40"><img src="images/mikulas.png" height="40"><img src="images/poprad.png" height="40"><img src="images/kosice.png" height="40"><img src="images/snv.png" height="40"><img src="images/gelnica.png" height="40"><img src="images/michalovce.png" height="40"></p>
 
+  <script src="./src/tablesort.js"></script>
+</body>
+<!DOCTYPE html>
+<head>
+  <title>Sorting Tables w/ JavaScript</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+</head>
 
 
-
-	<style type="text/css">
-		
-table th{
-		text-align: center;
-		background-color: #4e4e4e;
-		color: #FFF;
-		padding: 4px 30px 4px 8px;
-}
-
-table.kanbod{
-	text-align: center;
-	background-color: #232323;
-
-}
-
-td, th {
-  border-bottom: 1px solid #a3a3a3;
-  padding: 0.1rem;
-
-}
-
-
-table td.{
- color: white;
-}
-
-td.postup:nth-child(1) { background: #4e4e4e; }
+<style type="text/css">
+	
+	th {
+  color:#D5DDE5;;
+  background:#1b1e24;
+  border-bottom:3px solid #BD0000;
+  text-align: center;
+  font-size:15px;
+  font-weight: 80;
+  padding:2px;
  
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  vertical-align:middle;
+}
+
+tr:hover td {
+  background:#BD0000;
+  color:#FFFFFF;
+  border-top: 1px solid #BD0000;
+}
 
 </style>
 
-
-<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
+  <script src="tablesort.js"></script>
 </body>
-</html>
