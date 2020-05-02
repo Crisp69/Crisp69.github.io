@@ -3,7 +3,9 @@
   <title>Sorting Tables w/ JavaScript</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta charset="utf-8" />
-  <link rel="stylesheet" type="text/css" href="tablesort.js">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
    
   <link rel="stylesheet" type="text/css" href="tablesort.css">
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -77,83 +79,20 @@
 </nav>
 
 
-<div>
-  <table class="table-sortable" align="center">
-    <thead>
-      <tr>
-        <th width="170">Meno</th>
-        
-        <th width="80">Úspešnosť</th>
-        <th width="140">Inkasované góly</th>
-        <th></th>
-      </tr>
-    </thead>
-    <tbody>
-       <tr>
+<div class="brankar" style="width:800px; margin:0 auto;">
+ <table class="table table-striped" align="center">
+    <tr  class="bg-info" >
+        <th data-column="name" data-order="desc" width="50">Meno &#9650</th>
+        <th data-column="body" data-order="desc" width="50">Kanadské bodovanie &#9650</th>
+        <th data-column="goly" data-order="desc" width="50">Góly &#9650</th>
+        <th data-column="asists" data-order="desc" width="50">Asistencie &#9650</th>
+    </tr>
 
-        <td style="text-align: left"></td>
-          <td></td>
-          <td></td>
-          <td></td>
-       
-      </tr>
-      <tr>
-        <td style="text-align: left"></td>
+    <tbody id="myTable" >
         
-         <td></td>
-         <td></td>
-         <td></td>
-       
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-     
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-       
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-       
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-       
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-       
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-       
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-       
-      </tr>
-      <tr>
-       <td></td>
-        <td></td>
-        <td></td>
-      </tr>
     </tbody>
-  </table>
+</table>
+
 </div>
 
   <br>
@@ -167,6 +106,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta charset="utf-8" />
 </head>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <style type="text/css">
@@ -184,21 +136,91 @@
   vertical-align:middle;
 }
 
-td{
-  text-align: center;
-}
-
 tr:hover td {
   background:#099933;
   color:#FFFFFF;
   border-top: 1px solid #099933;
 }
 
+td{
+  text-align: center;
+}
+
+div.brankar{
+  width: 900px;
+  font-size: 15px;
+  padding: 0;
+}
 
 
 </style>
 
+
+
+
+
+
+
+
+
+
+<script>
+  var myArray = [
+       {'name':' ', 'body':'', 'goly':'', 'asists':''},
+      {'name':'', 'body':'', 'goly':'', 'asists':''},
+      {'name':'', 'body':'', 'goly':'', 'asists':''},
+      {'name':'', 'body' :'', 'goly':'', 'asists':''},
+      {'name':'', 'body':'',  'goly':'', 'asists':''},
+      {'name':'', 'body':'', 'goly':'', 'asists':''},
+      {'name':'', 'body':'', 'goly':'', 'asists':''},
+      {'name':'', 'body':'', 'goly':'', 'asists':''},
+      {'name':'', 'body':'', 'goly':'', 'asists':''},
+      {'name':'', 'body':'', 'goly':'', 'asists':''},
+  
+  
+  ]
+
+  $('th').on('click', function(){
+    var column = $(this).data('column')
+    var order = $(this).data('order')
+    var text = $(this).html()
+    text = text.substring(0, text.length - 1)
+
+    if(order == 'desc'){
+      $(this).data('order', "asc")
+      myArray = myArray.sort((a,b) => a[column] > b[column] ? 1 : -1)
+      text += '&#9660'
+
+    }else{
+      $(this).data('order', "desc")
+      myArray = myArray.sort((a,b) => a[column] < b[column] ? 1 : -1)
+      text += '&#9650'
+
+    }
+    $(this).html(text)
+    buildTable(myArray)
+  })
+
+  buildTable(myArray)
+
+  function buildTable(data){
+    var table = document.getElementById('myTable')
+    table.innerHTML = ''
+    for (var i = 0; i < data.length; i++){
+      var row = `<tr>
+              <td >${data[i].name}</td>
+              <td >${data[i].body}</td>
+              <td >${data[i].goly}</td>
+              <td >${data[i].asists}</td>
+            </tr>`
+      table.innerHTML += row
+
+
+    }
+  }
+
+</script>
   <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <script src="tablesort.js"></script>
+ 
 </body>
