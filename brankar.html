@@ -84,9 +84,9 @@
     <tr  class="bg-info" >
         <th data-column="name" data-order="desc"> Útočník &#9650</th>
         <th data-column="klub" data-order="desc">Klub</th>
-        <th data-column="body" data-order="desc">Kanadské bodovanie &#9650</th>
-        <th data-column="goly" data-order="desc">Góly &#9650</th>
-        <th data-column="asists" data-order="desc">Asistencie &#9650</th>
+        <th data-column="body" data-order="desc">Úspešnosť &#9650</th>
+        <th data-column="goly" data-order="desc">Inkasované góly &#9650</th>
+        
         
     </tr>
 
@@ -159,7 +159,6 @@ div.brankar{
       {'name':'<img src="" height="13">' , 'klub':'<img src="" height="19" >', 'body':'', 'goly':'', 'asists':''},
       {'name':'<img src="" height="13">' , 'klub':'<img src="" height="19" >', 'body':'', 'goly':'', 'asists':''},
       {'name':'<img src="" height="13">' , 'klub':'<img src="" height="19" >', 'body':'', 'goly':'', 'asists':''},
-      {'name':'<img src="" height="13">' , 'klub':'<img src="" height="19" >', 'body':'', 'goly':'', 'asists':''},
   
   
   ]
@@ -196,7 +195,7 @@ div.brankar{
               <td >${data[i].klub}</td>
               <td >${data[i].body}</td>
               <td >${data[i].goly}</td>
-              <td >${data[i].asists}</td>
+             
              </tr>`
       table.innerHTML += row
 
