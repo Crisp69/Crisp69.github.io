@@ -82,9 +82,11 @@
 <div class="brankar" style="width:800px; margin:0 auto;">
  <table class="table table-striped" align="center">
     <tr  class="bg-info" >
-        <th data-column="name" data-order="desc" width="50">Brankár &#9650</th>
-        <th data-column="body" data-order="desc" width="50">Úspešnosť &#9650</th>
-        <th data-column="goly" data-order="desc" width="50">Inkasované góly &#9650</th>
+        <th data-column="name" data-order="desc"> Útočník &#9650</th>
+        <th data-column="klub" data-order="desc">Klub</th>
+        <th data-column="body" data-order="desc">Kanadské bodovanie &#9650</th>
+        <th data-column="goly" data-order="desc">Góly &#9650</th>
+        <th data-column="asists" data-order="desc">Asistencie &#9650</th>
         
     </tr>
 
@@ -148,16 +150,16 @@ div.brankar{
 
 <script>
   var myArray = [
-       {'name':' ', 'body':'', 'goly':'', 'asists':''},
-      {'name':'', 'body':'', 'goly':'', 'asists':''},
-      {'name':'', 'body':'', 'goly':'', 'asists':''},
-      {'name':'', 'body' :'', 'goly':'', 'asists':''},
-      {'name':'', 'body':'',  'goly':'', 'asists':''},
-      {'name':'', 'body':'', 'goly':'', 'asists':''},
-      {'name':'', 'body':'', 'goly':'', 'asists':''},
-      {'name':'', 'body':'', 'goly':'', 'asists':''},
-      {'name':'', 'body':'', 'goly':'', 'asists':''},
-      {'name':'', 'body':'', 'goly':'', 'asists':''},
+      {'name':'<img src="" height="13">' , 'klub':'<img src="" height="19" >', 'body':'', 'goly':'', 'asists':''},
+      {'name':'<img src="" height="13">' , 'klub':'<img src="" height="19" >', 'body':'', 'goly':'', 'asists':''},
+      {'name':'<img src="" height="13">' , 'klub':'<img src="" height="19" >', 'body':'', 'goly':'', 'asists':''},
+      {'name':'<img src="" height="13">' , 'klub':'<img src="" height="19" >', 'body':'', 'goly':'', 'asists':''},
+      {'name':'<img src="" height="13">' , 'klub':'<img src="" height="19" >', 'body':'', 'goly':'', 'asists':''},
+      {'name':'<img src="" height="13">' , 'klub':'<img src="" height="19" >', 'body':'', 'goly':'', 'asists':''},
+      {'name':'<img src="" height="13">' , 'klub':'<img src="" height="19" >', 'body':'', 'goly':'', 'asists':''},
+      {'name':'<img src="" height="13">' , 'klub':'<img src="" height="19" >', 'body':'', 'goly':'', 'asists':''},
+      {'name':'<img src="" height="13">' , 'klub':'<img src="" height="19" >', 'body':'', 'goly':'', 'asists':''},
+      {'name':'<img src="" height="13">' , 'klub':'<img src="" height="19" >', 'body':'', 'goly':'', 'asists':''},
   
   
   ]
@@ -191,8 +193,10 @@ div.brankar{
     for (var i = 0; i < data.length; i++){
       var row = `<tr>
               <td >${data[i].name}</td>
+              <td >${data[i].klub}</td>
               <td >${data[i].body}</td>
               <td >${data[i].goly}</td>
+              <td >${data[i].asists}</td>
              </tr>`
       table.innerHTML += row
 
