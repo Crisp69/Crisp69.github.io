@@ -54,7 +54,8 @@
    <article class="novinky-info" style="background-color: #424949;border: 3px solid #2b2929;">
 
       <h2 align="center" style="color: white"><img src="images/tplogo.png" height="50">  "Novinky zo sveta turnaja"</h2>
-      <p align="center"><iframe width="300" height="154" src="https://w2.countingdownto.com/3009561" frameborder="0"></iframe></p>
+     
+      
       <p>Do turnaja sa zapojilo 14 tímov, v ktorých sa nachádzajú aj nám známi hráči ako<b> <a href="https://www.hockeyarena.net/sk/index.php?p=public_player_info.inc&id=39377349" style="color: #3885d4;">Andrej Mészaroš</a></b> <img src="images/nat/svk.gif" height="15"> či <b><a href="https://www.hockeyarena.net/sk/index.php?p=public_player_info.inc&id=40436206" style="color: #3885d4;"> Tomáš Kopecký</a></b> <img src="images/nat/svk.gif" height="15">. Obaja hráči obliekajú dres klubu <img src="images/kosice.png" height="19"><b> <a href="https://www.hockeyarena.net/sk/index.php?p=public_team_info_basic.php&team_id=9011" style="color: #3885d4;">HC Košice</a></b>. Pomôžu práve oni Košiciam k prebojovaniu sa cez základnú časť a play-off až k víťaznému poháru Vladimíra Dzurillu? Uvidíme ako sa k tomu postaví ich manažér, no favoritmi rozhodne sú.</p>
       
       <p>Na druhú stranu budú mať <img src="images/kosice.png" height="19"><b> <a href="https://www.hockeyarena.net/sk/index.php?p=public_team_info_basic.php&team_id=9011" style="color: #3885d4;">HC Košice</a></b> čo robiť aby si zabezpečili  1. miesto v skupine, pretože <img src="images/poprad.png" height="20"><b><a href="https://www.hockeyarena.net/sk/index.php?p=public_team_info_basic.php&team_id=7347"style="color: #3885d4;">HK Poprad</a></b> má nepochybne asi najlepší káder vo východnej skupine. Potvrdzuje to jeho silná súpiska, na ktorej sa nachádza aj reprezentant  Českej republiky <img src="images/nat/cz.gif" height="15"> <a href="https://www.hockeyarena.net/sk/index.php?p=public_player_info.inc&id=39581516" style="color: #3885d4;"><b>Martin Horák</a></b>, ktorý má najvyššií Index Šikovnosti na východe a taktiež mladý 18 ročný reprezentant Argentíny do 20 rokov <a href="https://www.hockeyarena.net/sk/index.php?p=public_player_info.inc&id=42028819" style="color: #3885d4;"><b>Mario Haedo</b></a> <img src="images/nat/arg.gif" height="15"> , ktorý pravdepodobne dostane šancu sa presadiť aj v turnajových zápasoch. Poprad tým tak dáva najavo, že si chce ísť nekompromisne po titul a s nikým sa deliť nehodlá.</p>
@@ -232,6 +233,39 @@ div.container_table{
 </style>
 
 
+<script type="text/javascript">
+  
 
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+</script>
 </body>
 <html>
