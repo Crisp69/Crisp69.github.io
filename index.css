@@ -23,8 +23,7 @@ body{
 
 .novinky-info{
   width: 100%;
-  background-color: rgb(0,0,0, 0.5)
-
+  background-color: rgb(0,0,0,)
 
 }
 
@@ -136,10 +135,16 @@ tr.z:nth-child(even){background-color: #e56700}
   display: none;
 }
 
-.table, .table tbody, .table tr{
-  display: block;
-  width: 100%;
-}
-.container {width:95%; margin-right:auto; margin-left:auto;}
+.container{
+  background-color: none;
 
 }
+
+.novinky-info{
+  background-color: rgba(0,0,0, 0.5);
+}
+
+.container_table{
+  display: none;
+}
+
