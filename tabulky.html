@@ -4,7 +4,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Tipsport-turnaj - Tabulka</title>
 	<link rel="stylesheet" type="text/css" href="tipsportliga.css">
-	<link rel="stylesheet" type="text/css" href="tipsportliga.css">
+	
   	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
  
   
@@ -52,9 +52,9 @@
 
 			 	
 	
-	 	<div class="wrapper">
+	 	<div id="container">
 
-	 		<div class="column">
+	 		
 	 	<table class="tabulka_B"  align="center"  width="480">
 	 		<tr>
 	 			<th align="center" width="30"></th>
@@ -117,8 +117,9 @@
 	  			<td align="center" style="color:white;" width="30"><b></b></td>
 	 		</tr>
 	 	</table>
-	 	</div>
-	 		<div class="column">
+	 	
+	 	<br>
+	 		
 	 	<table class="tabulka_A"  align="center" width="480">
 	 		<tr>
 	 			<th align="center" width="30"></th>
@@ -182,29 +183,27 @@
 	 		
 	 	</table>
 	 	</div>
-	 
-
-		
-		
-	 	
-		
+	
 	 </div>	
-	
-	
-	 	
+ 	
 
 
 
-	 
-	 
-	<style type="text/css">
+<style type="text/css">
+
+.container{
+	width: 500px;
+	height: 500px;
+	background-color: black;
+}
+
 		
-		table th{
-			text-align: center;
-			background-color: #2d2d2d;
-			color: #FFF;
-			padding: 4px 30px 4px 8px;
-		}
+table th{
+	text-align: center;
+	background-color: #2d2d2d;
+	color: #FFF;
+	padding: 4px 30px 4px 8px;
+}
 
 table.tabulka_A{
 	text-align: center;
@@ -244,31 +243,6 @@ table.pravidla{
     border-left: 10px;
   }
 
-  .container{
-    max-width:1300px;
-    width: 100%;
-    margin: 0 auto;
-
-  }
-
-  .column{
-    margin: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 1px 3px grey;
-    width: 350;
-    display: table-cell;
-    
-    float: left;
-    
-  }
- 
-.container{
-	padding-top: 200px;
-}
-
-
-
   .row:nth-child(1) .column:nth-child(1){ background: #A4BFD1; }
 
   .row:nth-child(1) .column:nth-child(2){ background: #CFC453; }
@@ -280,23 +254,8 @@ table.pravidla{
     .container{
       margin: 0;
     }
-    .column{
-    width: 100%;
-    display: block;
-    margin: 10px 0;
-    border:none;
+  
   }
-    .column1{
-    width: 100%;
-    display: block;
-    margin: 10px 0;
-    border:none;
-  }
-
-  }
-
-
-
 		
 	</style>
 
