@@ -54,16 +54,20 @@
 
 <br>
 
-<div class="container">
-   <article class="novinky-info">
+<div class="container" style="overflow-y: scroll; height: auto; ">
+   <article class="novinky-info" style="background-color: #424949;border: 5px solid rgba(28,110,164,0.75);border-radius: 26px 26px 0px 0px;">
 
       <h2 align="center" style="color: white">"2. Kolo"</h2>
+      
+      <p></p>
+      
+      
 
-  
+   </article>
+ </div>
 
-</article>
-
-<table id="tabulka" width="285">
+  <div class="container_table">
+      <table id="tabulka" width="285">
   <thead>
     <th>Najproduktívnejší hráči kola</th>
     <th></th>
@@ -97,104 +101,47 @@
     </tr>
   </tbody>
 </table>
+     
+   </div>
+
 </div>
-
-
-  
-
-
-
-
-
 
 
 <style type="text/css">
 
-
-  .novinky-info{
-    background-color: rgba(0,0,0, 0.9);
-  }
-
   .container{
-    
-      margin-right: auto;
-    margin-left: auto;
+  
+
   }
-  div.container_kolo {
-        left: 28%;
-        width: 50%;
+
+.model1{
+  padding-top: 10px;
+  padding-bottom: 30px;
+  padding-left: 18px;
+}
+
+
+
+ div.wrapper {
+        overflow:hidden;
+        overflow-y: scroll;
+        width: 800px;
         margin: 0 auto;
         height: 700px; // change this to desired height
         padding-left: 300px;
-        background-color: rgb(0,0,0, 0.9);
-
-
-}
-
-#kolo_3{
-    margin:25px;
-    box-shadow: 0 1px 3px grey;
-    background-color: #fff;
-    border-radius: 10px;
-    font-size: 20px;
-    background: #e8edff;
- 
-}
-  
-#kolo{
-
-  margin:25px;
-    box-shadow: 0 1px 3px grey;
-    background-color: #fff;
-    border-radius: 10px;
-    text-align: center;
-  background: #e8edff;
-  color: white;
-  font-size: 18px; 
-  align-self: flex-start;
-  display: flex;
-    justify-content: left;
+        
 
 }
 
 
-#tabulka{
-  
-  background-color: #3e94ec;
-  color: black;
-  border: 1px solid #e8edff;
-  font-size: 15px;
-  margin: 0 auto;
-  align-self: flex-start;
-  box-shadow: 5px 10px #888888;
-}
 
-th{
-  border-collapse: separate;
-  text-align: center;
+div.container_table{
+       position:relative;
+       left:270px;
+       width: 300px;      
+       background-color: #424949;
 
-}
-
-th{
-  background:#1b1e24;
-  color: white;
-}
-tr:nth-child(even) {background-color: #3885d4;}
-
-
-p{
-  color: grey;
-  text-shadow: -1px 0 grey, 0 1px black, 1px 0 black, 0 -1px grey;
-  text-align: center;
- 
-}
-
-
-@media only screen and(max-width: 500px;){
-  .novinky-info{
-    background-color: rgba(0,0,0, 0.5);
-  }
-}
+    }
 
 </style>
 
