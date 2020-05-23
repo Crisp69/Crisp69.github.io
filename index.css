@@ -152,3 +152,7 @@ tr.z:nth-child(even){background-color: #e56700}
 #tabulka{
   display: none;
 }
+
+.info{
+  display: none;
+}
