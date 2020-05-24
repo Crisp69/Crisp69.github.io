@@ -55,10 +55,6 @@ body{
 
 
 
-
-
-
-
 td{
   height: 35px;
   background-color: 
@@ -154,5 +150,9 @@ tr.z:nth-child(even){background-color: #e56700}
 }
 
 .info{
+  display: none;
+}
+
+div.poprad-radost{
   display: none;
 }
