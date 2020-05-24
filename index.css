@@ -156,3 +156,7 @@ tr.z:nth-child(even){background-color: #e56700}
 div.poprad-radost{
   display: none;
 }
+
+div.trencin-radost{
+  display: none;
+}
