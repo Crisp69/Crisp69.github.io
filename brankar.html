@@ -65,9 +65,10 @@
     <tr  class="bg-info" >
         <th data-column="name" data-order="desc"> Brankár &#9650</th>
         <th data-column="klub" data-order="desc">Klub</th>
+        <th data-column="goly" data-order="desc">Zápasy &#9650</th>
         <th data-column="body" data-order="desc">Úspešnosť &#9650</th>
         <th data-column="goly" data-order="desc">Inkasované góly &#9650</th>
-        <th data-column="goly" data-order="desc">Zápasy &#9650</th>
+        
         
     </tr>
 
@@ -176,9 +177,10 @@ td{
       var row = `<tr>
               <td >${data[i].name}</td>
               <td >${data[i].klub}</td>
+              <td >${data[i].zapasy}</td>
               <td >${data[i].body}</td>
               <td >${data[i].goly}</td>
-              <td >${data[i].zapasy}</td>
+              
              </tr>`
       table.innerHTML += row
 
