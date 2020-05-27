@@ -164,6 +164,9 @@ tr.z:nth-child(even){background-color: #e56700}
 .img-mobile-responsive-mikulas{
   width: 100%;
 }
+h3{
+  text-align: center;
+}
 
 
 
