@@ -27,10 +27,10 @@ tr:last-child {
 }
 
 tr:nth-child(odd) td {
-  background:#716D6D;
+  background:#342A2A;
 }
 tr:nth-child(even) td {
-  background:#716D6D;
+  background:#342A2A;
 }
 tr:nth-child(odd):hover td {
  background-color: #404040
