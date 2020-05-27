@@ -7,7 +7,9 @@ body{
 div.logos{
   display: none;
 }
-
+td.name{
+  text-align: left;
+}
 tr:hover td {
   background:#4E5066;
   color:#FFFFFF;

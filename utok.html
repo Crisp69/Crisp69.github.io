@@ -93,24 +93,9 @@
     color: white;
   }
 	
-	th {
-  color:#D5DDE5;;
-  background:#1b1e24;
-  border-bottom:3px solid#114f83;;
-  text-align: center;
-  font-size:15px;
-  font-weight: 80;
-  padding:2px;
- 
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  vertical-align:middle;
-}
+	
 
-tr:hover td {
-  background:#114f83;;
-  color:#FFFFFF;
-  border-top: 1px solid #BD0000;
-}
+
 td{
   text-align: center;
   font-style: italic;
@@ -190,7 +175,7 @@ div.brankar{
     table.innerHTML = ''
     for (var i = 0; i < data.length; i++){
       var row = `<tr>
-              <td >${data[i].name}</td>
+              <td class="name" >${data[i].name}</td>
               <td >${data[i].klub}</td>
               <td >${data[i].body}</td>
               <td >${data[i].goly}</td>
