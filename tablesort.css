@@ -4,7 +4,9 @@ body{
     background: url(http://getwallpapers.com/wallpaper/full/c/d/a/320050.jpg);
 
 }
-
+div.logos{
+  display: none;
+}
 
 tr:hover td {
   background:#4E5066;
