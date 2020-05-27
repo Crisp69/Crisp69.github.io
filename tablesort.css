@@ -10,12 +10,15 @@ div.logos{
 td.name{
   text-align: left;
 }
+
 tr:hover td {
   background:#4E5066;
   color:#FFFFFF;
   border-top: 1px solid #22262e;
 }
-
+td{
+  color: white;
+}
 tr:first-child {
   border-top:none;
 }
@@ -24,10 +27,16 @@ tr:last-child {
 }
 
 tr:nth-child(odd) td {
-  background:#EBEBEB;
+  background:#716D6D;
+}
+tr:nth-child(even) td {
+  background:#716D6D;
 }
 tr:nth-child(odd):hover td {
-  background:#4E5066;
+ background-color: #404040
+}
+tr:nth-child(even):hover td {
+ background-color: #404040
 }
 
 tr:last-child td:first-child {
