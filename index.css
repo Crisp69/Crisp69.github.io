@@ -76,8 +76,8 @@ th{
   border-bottom: 2px solid grey;
 
 }
-tr:nth-child(odd){background-color: #3885d4}
-tr:nth-child(even){background-color: #3e94ec}
+tr:nth-child(odd){background-color:grey}
+tr:nth-child(even){background-color: grey}
 
 tr.z:nth-child(odd){background-color: #ff7300}
 tr.z:nth-child(even){background-color: #e56700}
