@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<title>Tipsport-turnaj - Tabulka</title>
+	
+  	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	
+</head>
+<body style="background: url(images/pohar1.jpg);">
+
+<div class="container">
+
+	<table class="tablulka">
+		<thead>
+	 		<th width="35"></th>
+	 		<th></th>
+	 		<th width="150">Západ</th>
+	 		<th>OZ</th>
+	 		<th>V</th>
+	 		<th>VP</th>
+	 		<th>PP</th>
+	 		<th>P</th>
+	 		<th>G</th>
+	 		<th>B</th>
+	 		<th></th>
+	 		<th></th>
+	 		<th></th>
+
+	 	</thead>
+	 		
+	 	<tbody>
+	 		<tr>
+				<td class="semifinale">1.</td>
+				<td>&nbsp;<img src="images/piestany.png" height="14"></td>
+	 			<td>&nbsp;<a href="https://www.hockeyarena.net/sk/index.php?p=public_team_info_basic.php&team_id=2589">HC BW Piešťany</a></a></td>
+	 			<td>5</td>
+	 			<td>3</td>
+	 			<td>0</td>
+	 			<td>0</td>
+	 			<td>2</td>
+	 			<td >21 : 16</td>
+	 			<td class="body"><b>9</b></td>	
+	 			<td class="form"><div id="d1"><img src="images/lose.png" height="15"><div id="d2">Piešťany 3:5 Trenčín</div></div></td>
+	 			<td class="form"><div id="d1"><img src="images/win.png" height="15"><div id="d2">Košice 3:5 Piešťany</div></div></td>
+	 			<td class="form"><div id="d1"><img src="images/win.png" height="15"><div id="d2">Piešťany 6:2 Zvolen</div></div></td>
+	 		</tr>
+
+	 		<tr>
+				<td class="semifinale">2.</td>
+				<td>&nbsp;<img src="images/Skalica.png" height="18"></td>
+	 			<td>&nbsp;Skalica Kubas</a></td>
+	 			<td>5</td>
+	 			<td>3</td>
+	 			<td>0</td>
+	 			<td>0</td>
+	 			<td>2</td>
+	 			<td >16 : 12</td>
+	 			<td class="body"><b>9</b></td>	
+	 			<td class="form"><div id="d1"><img src="images/win.png" height="15"><div id="d2">Michalovce 1:4 Skalica</div></div></td>
+	 			<td class="form"><div id="d1"><img src="images/win.png" height="15"><div id="d2">Skalica 6:4 Poprad</div></div></td>
+	 			<td class="form"><div id="d1"><img src="images/lose.png" height="15"><div id="d2">Spišská 4:1 Skalica</div></div></td>
+	 		</tr>
+	 		<tr>
+				<td class="stvrtfinale">3.</td>
+				<td>&nbsp;<img src="images/Skalica.png" height="14"></td>
+	 			<td>&nbsp;Skalica Kubas</a></td>
+	 			<td>5</td>
+	 			<td>3</td>
+	 			<td>0</td>
+	 			<td>0</td>
+	 			<td>2</td>
+	 			<td >16 : 12</td>
+	 			<td class="body"><b>9</b></td>	
+	 			<td class="form"><div id="d1"><img src="images/win.png" height="15"><div id="d2">Michalovce 1:4 Skalica</div></div></td>
+	 			<td class="form"><div id="d1"><img src="images/win.png" height="15"><div id="d2">Skalica 6:4 Poprad</div></div></td>
+	 			<td class="form"><div id="d1"><img src="images/lose.png" height="15"><div id="d2">Spišská 4:1 Skalica</div></div></td>
+	 		</tr>
+	 	</tbody>
+	 	
+ 	</table>	
+
+</div>
+
+<style type="text/css">
+
+div.container{
+  margin: auto;
+  width: 40%;
+  padding: 100px;
+}	
+
+a{
+text-decoration: none;
+color: white;
+}
+
+.form{
+	 border-bottom: none;
+}
+table {border-collapse: collapse;}
+
+table th{
+	text-align: center;
+	background-color: #2d2d2d;
+	color: #FFF;
+	padding: 4px 10px;
+}
+
+
+td:nth-child(3){text-align: left;}
+
+td, th {
+  border-bottom: 1px solid #a3a3a3;
+  padding: 0.1rem;
+  background-color: white;
+
+}
+td{
+	color: white;
+	text-align: center;
+	background-color: #232323;
+}
+
+td.semifinale:nth-child(1) { background: #114f83; }
+td.stvrtfinale:nth-child(1) { background: #7F0029; }
+td.nepostupuje:nth-child(1) { background: #BD0000; }
+td.body:nth-child(10) { background: #a3a3a3; }
+
+
+
+#d1 {
+
+  background-color: none;
+  display: block;
+  width: 15px;
+  height: 15px;
+  padding-bottom: 22px;
+}
+
+#d2 {
+  position: absolute;
+  background-color: black;
+  color: white;
+  visibility: hidden;
+  display: block;
+}
+#d1:hover #d2{
+  visibility: visible;
+}
+
+
+</style>
+
+
+</body>
+</html>
+
+
+
