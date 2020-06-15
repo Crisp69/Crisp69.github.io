@@ -1,0 +1,139 @@
+
+
+body{
+  background: url("images/model3.jpg");
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  width: 100%;
+  position: absolute;
+
+}
+
+.img-banner{
+  display: none;
+
+
+}
+
+.novinky-info{
+  width: 100%;
+  background-color: rgb(153, 163, 164);
+  
+
+}
+
+.img-info h2 {
+  padding: 30px 30px 20px;
+  font-family: arial;
+  font-size: 50px;
+  color: #111;
+  line-height: 44px;
+}
+
+.novinky-info p {
+  padding: 0px 30px 20px;
+  font-family: arial;
+  font-size: 15px;
+  color: #111;
+  line-height: 24px;
+  color: white; 
+}
+
+
+
+
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+@media only screen and (min-width: 768px){
+  .img-banner{
+  display: block;
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.novinky-info h2 {
+  padding: 20px 0px 0px;
+}
+.novinky-info p {
+  padding: 30px 10px 20px;
+ 
+}
+.st_table_header{
+  display: none;
+}
+
+.container {width:95%; margin-right:auto; margin-left:auto;}
+
+}
+
+@media only screen and (min-width: 1000px){
+.wrapper{
+  width: 1000px;
+}
+.novinky-info{
+  width: 50%;
+  float: right;
+}
+
+}
+
+@media only screen and (max-width: 500px){
+  .table thead{
+  display: none;
+}
+
+.container{
+  background-color: none;
+
+}
+
+.novinky-info{
+  background-color: rgba(0,0,0, 0.5);
+}
+
+.container_table{
+  display: none;
+}
+
+#tabulka{
+  display: none;
+}
+
+.info{
+  display: none;
+}
+
+.img-mobile-responsive{
+  height: 100%;
+  width: 100%;
+}
+.img-mobile-responsive-kosice{
+
+  width: 100%;
+}
+.img-mobile-responsive-mikulas{
+  width: 100%;
+}
+h3{
+  text-align: center;
+}
+
+
+#container{
+  display: none;
+}
