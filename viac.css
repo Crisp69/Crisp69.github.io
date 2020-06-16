@@ -137,3 +137,17 @@ h3{
 #container{
   display: none;
 }
+
+div.achievements{
+
+overflow-x: auto;
+}
+
+td.standing{
+      width: auto;
+}
+
+.table-responsive{
+  display: table;
+}
+ 
