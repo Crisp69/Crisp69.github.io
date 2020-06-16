@@ -4,9 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta charset="utf-8" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-
-   
+ 
   <link rel="stylesheet" type="text/css" href="tablesort.css">
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
@@ -96,8 +94,8 @@
     color: white;
   }
   th {
-  color:#D5DDE5;;
-  background:#1b1e24;
+  color:white;
+  background: black;
   border-bottom:3px solid #BD0000;
   text-align: center;
   font-size:15px;
@@ -111,7 +109,7 @@
 tr:hover td {
   background:#BD0000;
   color:#FFFFFF;
-  border-top: 1px solid #BD0000;
+  border-top: 1px solid black;
 }
 
 td{
@@ -146,9 +144,9 @@ div.brankar{
       
       {'name':'<img src="images/nat/uk.gif" height="13"> Michel Rossignol' , 'klub':'<img src="images/kosice.png" height="25" >', 'body':'11', 'goly':'9', 'asists':'2'},
 
-      {'name':'<img src="images/nat/lot.gif" height="13">Krišjānis Videnieks <img src="images/sports-medal.png" height="22" >', 'klub':'<img src="images/mikulas.png" height="25" >', 'body':'11', 'goly':'7', 'asists':'3'},
+      {'name':'<img src="images/nat/lot.gif" height="13"> Krišjānis Videnieks <img src="images/sports-medal.png" height="22" >', 'klub':'<img src="images/mikulas.png" height="25" >', 'body':'11', 'goly':'7', 'asists':'3'},
 
-      {'name':'<img src="images/nat/biel.gif" height="13">Leanid Fatsejeu', 'klub':'<img src="images/snv.png" height="25" >', 'body':'11', 'goly':'0', 'asists':'11'}, 
+      {'name':'<img src="images/nat/biel.gif" height="13"> Leanid Fatsejeu', 'klub':'<img src="images/snv.png" height="25" >', 'body':'11', 'goly':'0', 'asists':'11'}, 
 
       {'name':'<img src="images/nat/lot.gif" height="13"> Anatolijs Freibergs' , 'klub':'<img src="images/kosice.png" height="25" >', 'body':'10', 'goly':'7', 'asists':'3'},
 
@@ -193,8 +191,8 @@ div.brankar{
       var row = `<tr>
               <td class="name" >${data[i].name}</td>
               <td >${data[i].klub}</td>
-              <td ><b style="color:#EAEAEA">${data[i].body}</b></td>
-              <td ><b style="color:#DFDFDF">${data[i].goly}</b></td>
+              <td ><b style="color:#080808">${data[i].body}</b></td>
+              <td ><b style="color:#080808">${data[i].goly}</b></td>
               <td ><b style="color:#080808">${data[i].asists}</b></td>
             </tr>`
       table.innerHTML += row
