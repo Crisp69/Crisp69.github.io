@@ -129,106 +129,14 @@ td{
 </style>
 
 
-
-
-
-
-
-
-
-
-<script>
-  var myArray = [
-
-      {'name':'<img src="images/nat/uk.gif" height="13"> Ahley Owen' , 'klub':'<img src="images/poprad.png" height="22" >', 'body':'96,13 %', 'goly':'4', 'zapasy':'4'},
-
-      {'name':'<img src="images/nat/est.gif" height="13"> Erik Torp' , 'klub':'<img src="images/snv.png" height="19" >', 'body':'94,74 %', 'goly':'13', 'zapasy':'9'},
-
-      {'name':'<img src="images/nat/ir.gif" height="13"> Harry Hurst' , 'klub':'<img src="images/michalovce.png" height="19" >', 'body':'93,13 %', 'goly':'8', 'zapasy':'4'},
-
-      {'name':'<img src="images/nat/est.gif" height="13"> Leidur Teeäär' , 'klub':'<img src="images/Skalica.png" height="19" >', 'body':'93,10 %', 'goly':'4', 'zapasy':'5'},
-
-      {'name':'<img src="images/nat/svk.gif" height="13"> Dominik Dežerický' , 'klub':'<img src="images/banska_bystrica.png" height="22" >', 'body':'92,30 %', 'goly':'2', 'zapasy':'1'},
-     
-      {'name':'<img src="images/nat/svk.gif" height="13"> Martin Puška' , 'klub':'<img src="images/piestany.png" height="18" >', 'body':'92,09 %', 'goly':'21', 'zapasy':'9'}, 
-
-      {'name':'<img src="images/nat/cz.gif" height="13"> Richard Pilát' , 'klub':'<img src="images/mikulas.png" height="19" >', 'body':'90,84 %', 'goly':'22', 'zapasy':'9'},
-     
-      {'name':'<img src="images/nat/cz.gif" height="13"> Martin Horák' , 'klub':'<img src="images/poprad.png" height="22" >', 'body':'90,74 %', 'goly':'16', 'zapasy':'5'},
-      
-      {'name':'<img src="images/nat/svk.gif" height="13"> Peter Čambalik' , 'klub':'<img src="images/Skalica.png" height="19" >', 'body':'89,94 %', 'goly':'7', 'zapasy':'5'}, 
-
-      {'name':'<img src="images/nat/nem.gif" height="13"> Mario Mennemeyer' , 'klub':'<img src="images/slovan.png" height="22" >', 'body':'89,58 %', 'goly':'29', 'zapasy':'9'},
-
-      {'name':'<img src="images/nat/kaz.gif" height="13"> Efrem Kaliev' , 'klub':'<img src="images/gelnica.png" height="19" >', 'body':'89,40 %', 'goly':'3', 'zapasy':'2'}, 
-
-      {'name':'<img src="images/nat/fin.gif" height="13"> Torsti Vilppola' , 'klub':'<img src="images/zvolen.png" height="22" >', 'body':'89,26 %', 'goly':'34', 'zapasy':'9'},
-
-      {'name':'<img src="images/nat/cz.gif" height="13"> Zdeněk Chaloupka' , 'klub':'<img src="images/banska_bystrica.png" height="22" >', 'body':'89,22 %', 'goly':'22', 'zapasy':'9'},
-
-      {'name':'<img src="images/nat/lot.gif" height="13"> Egons Ievzieds' , 'klub':'<img src="images/trencin.png" height="19" >', 'body':'89,06 %', 'goly':'26', 'zapasy':'9'}, 
-
-      {'name':'<img src="images/nat/cz.gif" height="13"> Jan Cihlář' , 'klub':'<img src="images/kosice.png" height="19" >', 'body':'88,93 %', 'goly':'24', 'zapasy':'9'},
-           
-      {'name':'<img src="images/nat/isr.gif" height="13"> Gedi Chernyakhovskiy' , 'klub':'<img src="images/detva.png" height="19" >', 'body':'88,78 %', 'goly':'28', 'zapasy':'9'},
-
-      {'name':'<img src="images/nat/bul.gif" height="13"> Dimo Rulov' , 'klub':'<img src="images/gelnica.png" height="19" >', 'body':'88,28 %', 'goly':'22', 'zapasy':'9'},
-
-      {'name':'<img src="images/nat/slo.gif" height="13"> Aljaž Fornezzi' , 'klub':'<img src="images/michalovce.png" height="19" >', 'body':'88,22 %', 'goly':'20', 'zapasy':'5'},
-      
-      {'name':'<img src="images/nat/fin.gif" height="13">  Vili Hyvönen' , 'klub':'<img src="images/Skalica.png" height="19" >', 'body':'87,53 %', 'goly':'11', 'zapasy':'4'},
       
       {'name':'<img src="images/nat/svk.gif" height="13"> Norman Michalenko' , 'klub':'<img src="images/martin.png" height="19" >', 'body':'86,94 %', 'goly':'18', 'zapasy':'5'},
 
       {'name':'<img src="images/nat/svk.gif" height="13"> Igor Horáček' , 'klub':'<img src="images/martin.png" height="19" >', 'body':'84,55 %', 'goly':'18', 'zapasy':'4'}, 
   
-  ]
 
 
-
-  $('th').on('click', function(){
-    var column = $(this).data('column')
-    var order = $(this).data('order')
-    var text = $(this).html()
-    text = text.substring(0, text.length - 1)
-
-    if(order == 'desc'){
-      $(this).data('order', "asc")
-      myArray = myArray.sort((a,b) => a[column] > b[column] ? 1 : -1)
-      text += '&#9660'
-
-    }else{
-      $(this).data('order', "desc")
-      myArray = myArray.sort((a,b) => a[column] < b[column] ? 1 : -1)
-      text += '&#9650'
-
-    }
-    $(this).html(text)
-    buildTable(myArray)
-  })
-
-  buildTable(myArray)
-
-  function buildTable(data){
-    var table = document.getElementById('myTable')
-    table.innerHTML = ''
-    for (var i = 0; i < data.length; i++){
-      var row = `<tr>
-              <td class="name" >${data[i].name}</td>
-              <td >${data[i].klub}</td>
-              <td ><b style="color:#080808;">${data[i].zapasy}</b></td>
-              <td ><b style="color:#080808;">${data[i].body}</b></td>
-              <td ><b style="color:#080808;">${data[i].goly}</b></td>
-              
-             </tr>`
-      table.innerHTML += row
-
-
-    }
-  }
-
-</script>
-  <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+ 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
  
 </body>
