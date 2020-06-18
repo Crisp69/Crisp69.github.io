@@ -51,8 +51,8 @@
 </nav>
 </header>
 
-
-<table>
+<div class="table-responsive">
+<table class="tabulka" align="center">
 	<thead>
 		<th></th>
 		<th></th>
@@ -63,14 +63,14 @@
 		<tr>
 			<td>&nbsp;<img src="images/med_01.png" class="logo"></td>
 			<td class="standing">&nbsp;&nbsp;Majster</td>
-			<td class="club" style="color: #e6d000"></td>
+			<td class="club" style="color: #e6d000">Hc Košice</td>
 			<td></td>		
 		</tr>
 			
 		<tr>
 			<td>&nbsp;<img src="images/med_02.png" class="logo"></td>
 			<td class="standing">&nbsp;&nbsp;Vicemajster</td>
-			<td class="club" style="color: #9a9a9a"></td>	
+			<td class="club" style="color: #9a9a9a">HK Dukla Trenčín</td>	
 			<td></td>			
 		</tr>
 		
@@ -81,10 +81,16 @@
 			<td></td>			
 		</tr>
 		<tr>
+		<th></th>
+		<th>Ocenenia</th>
+		<th>Hráč</th>
+		<th>Klub</th>
+		</tr>
+		<tr>
 			<td style="padding-left: 5px;"> 🎯</td>
 			<td class="standing">&nbsp;&nbsp;Najproduktívnejší hráč</td>
-			<td class="club"></td>		
-			<td></td>		
+			<td class="club">Filip Fusch</td>		
+			<td>MHK 32 Liptovský Mikuláš </td>		
 		</tr>
 		<tr>
 			<td></td>
@@ -103,7 +109,7 @@
 	</tbody>
 </table>
 
-<br>
+</div>
 
 
 
@@ -113,6 +119,14 @@
 
 
 <style type="text/css">
+
+	.table-responsive{
+		background-color: white;
+		width: 800px;
+		margin: 0 auto;
+		padding-top: 90px;
+		padding-bottom: 90px;
+	}
 
 
 	table{
@@ -158,6 +172,19 @@
 .logo{
 	padding-bottom: 3px;
 	 
+
+}
+
+
+@media only screen and (max-width: 500px){
+	table.tabulka{
+  		width:%;	
+
+	}
+	.table-responsive{
+		overflow-x: auto;
+		background: url(images/pohar1.jpg);
+	}
 
 }
 

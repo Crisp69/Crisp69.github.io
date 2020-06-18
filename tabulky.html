@@ -348,7 +348,13 @@
 .form{
 	 border-bottom: none;
 }
-
+.table-responsive{
+		background-color: white;
+		width: 800px;
+		margin: 0 auto;
+		padding-top: 120px;
+		padding-bottom: 120px;
+	}
 
 
 table th{
@@ -403,13 +409,18 @@ td.body:nth-child(10) { background: #a3a3a3; }
   visibility: visible;
 }
 
+
+
+
 @media only screen and (max-width: 500px){
 	table.tabulka{
   		width:140%;	
-
+  		overflow-x: auto;
 	}
 	.table-responsive{
 		overflow-x: auto;
+		width: 100%;
+		margin: 0 auto;
 	}
 
 }
