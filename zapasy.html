@@ -3,7 +3,7 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Tipsport-turnaj - Zapasy</title>
-	<link rel="stylesheet" type="text/css" href="tipsportliga.css">
+	
   	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
  	
 
@@ -12,26 +12,14 @@
 <body style="background: url(images/model3.jpg);">
 
 <header>
-  <nav class="navbar navbar-inverse">
+  <nav class="navbar navbar-inverse" class="navbar-responsive" style="width: 800px; margin: 0 auto;">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">TIPSPORT LIGA</a>
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="index.html">Home</a></li>
-      <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Novinky <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="novinky.html" style="color: #BD0000; background-color: #222"><b>Zo sveta turnaja</b></a></li>
-            <li><a href="1kolo.html" style="color: #114f83; background-color: #222"><b>1. kolo</b></a></li>
-            <li><a href="2kolo.html" style="color: #114f83; background-color: #222"><b>2. kolo</b></a></li>
-            <li><a href="3kolo.html"style="color: #114f83; background-color: #222"><b>3. kolo</b></a></li>
-            <li><a href="4kolo.html"style="color: #114f83; background-color: #222"><b>4. kolo</b></a></li>
-            <li><a href="5kolo.html"style="color: #114f83; background-color: #222"><b>5. kolo</b></a></li>
-            <li><a href="6kolo.html"style="color: #114f83; background-color: #222"><b>6. kolo</b></a></li>
-            <li><a href="7kolo.html"style="color: #114f83; background-color: #222"><b>7. kolo</b></a></li>
-         </ul>
-        </li>
+      <li><a href="novinky.html" style=" background-color: #222"><b>Novinky</b></a></li>
       <li><a href="zapasy.html">Zápasy</a></li>
       <li><a href="playoff.html">Play-off</a></li>
       <li><a href="tabulky.html" style="color: white"><b>Tabuľky</a></b></li>
@@ -793,13 +781,19 @@
 	
 	<style type="text/css">
 
+		.wrapper{
+			background-color: #DFDFDF;
+			width: 800px;
+			margin: 0 auto;
+		}
+
 
 		.winner{
 			background-color: #296D15;
 		}
 		p{
-			color: white;
-    text-shadow: 2px 2px black;
+			color: black;
+    text-shadow: 2px 2px white;
   }
 
 		div.wrapper {
@@ -834,7 +828,17 @@ td:nth-child(odd) { background: #686B6D; }
 
 td.datum:nth-child(1) { background: #00B050; }
 
-	</style>
+
+
+@media only screen and (max-width: 760px){ 
+
+	.wrapper{
+		width: 100%;
+	}
+
+}
+
+</style>
 
  	
 

@@ -3,33 +3,21 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>7.kolo</title>
-  <link rel="stylesheet" type="text/css" href="index.css">
+  
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 </head>
 
 <body style="background: url(images/pohar1.jpg);">
   <header>
-  <nav class="navbar navbar-inverse">
+  <nav class="navbar navbar-inverse" style="width: 850px; margin: 0 auto;">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">TIPSPORT LIGA</a>
+     <a class="navbar-brand" href="#">TIPSPORT LIGA</a>
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="index.html">Home</a></li>
-      <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Novinky <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="novinky.html" style="color: #BD0000; background-color: #222"><b>Všeobecné</b></a></li>
-            <li><a href="1kolo.html" style="color: #114f83; background-color: #222"><b>1. kolo</b></a></li>
-            <li><a href="2kolo.html" style="color: #114f83; background-color: #222"><b>2. kolo</b></a></li>
-            <li><a href="3kolo.html"style="color: #114f83; background-color: #222"><b>3. kolo</b></a></li>
-            <li><a href="4kolo.html"style="color: #114f83; background-color: #222"><b>4. kolo</b></a></li>
-            <li><a href="5kolo.html"style="color: #114f83; background-color: #222"><b>5. kolo</b></a></li>
-            <li><a href="6kolo.html"style="color: #114f83; background-color: #222"><b>6. kolo</b></a></li>
-            <li><a href="7kolo.html"style="color: #114f83; background-color: #222"><b>7. kolo</b></a></li>
-         </ul>
-        </li>
-     <li><a href="zapasy.html">Zápasy</a></li>
+       <li><a href="novinky.html" style=" background-color: #222"><b>Novinky</b></a></li>
+      <li><a href="zapasy.html">Zápasy</a></li>
       <li><a href="playoff.html">Play-off</a></li>
       <li><a href="tabulky.html" style="color: white"><b>Tabuľky</a></b></li>
       <li><a href="statistiky.html" style="color: white"><b>Štatistiky</b></a></li>
@@ -40,8 +28,9 @@
             <li><a href="uspechy.html">Úspechy </a></li>
             <li><a href="medailoveporadie.html">Medailové poradie</a></li>
          </ul>
-        </li>    
+        </li> 
       <li><a href="pravidla.html">Pravidlá </a></li>
+      
       <li><a href="https://www.hockeyarena.net/sk/index.php?p=manager_discussion_posts.php&table_id=499794&last_seen=0">Fórum</a></li>
 
     </ul>
@@ -50,13 +39,11 @@
 </header>
 
 
-<br>
- 
 
 
-<br>
-<div class="container">
-   <article class="novinky-info" style="background-color: #424949;border: 3px solid #2b2929; height: auto; overflow-y:scroll; height:850px;">
+<div class="table-responsive">
+    <div class="wrapper">
+   <article class="novinky-info"style="height: 800px; overflow-y:scroll;">
 
       <h2 align="center" style="color: white;background-color: rgb(255, 255, 255, 0.5);"><img src="images/tplogo.png" height="50"> 7. Kolo</h2>
 
@@ -92,41 +79,15 @@
     </article>
  </div>
 
+
   
 
-
-
-
-  <div class="container_table"style="border: 3px solid #2b2929;height: 656px;">
-    
-      <table id="tabulka" width="285">
-
+  <table class="table-results">
   <thead>
-    <th>Najproduktívnejší hráč kola</th>
-    <th></th>
-    <th>Body</th>
-  </thead>
-  <tbody>
-    <tr>
-      <td class="name" align="left"style="border-bottom: 2px solid #C8C8C8;">&nbsp;<img src="images/nat/svk.gif">&nbsp;&nbsp;Radúz Rišňovský&nbsp;&nbsp;<img src="images/sports-medal.png" height="22" ></td>
-      <td style="border-bottom: 2px solid #C8C8C8;"><img src="images/trencin.png" height="20"></td>
-      <td align="center"style="border-bottom: 2px solid #C8C8C8;"><b>3</b></td>
-    </tr>
-       
-  </tbody>
-
-</table>
- <br>
-  <table>
     
-  <thead>
-<th width="200" style="background-color: #424949;"></th>
-      <th width="102" style="background-color: #424949;"><b><img src="images/goal=net.png" height="40"></b></th>
-      <th width="200" style="background-color: #424949;"></th>
-        
   </thead>
 
-  <tbody>
+    <tbody>
       <th  width="200">Zvolen</th>
         <th  width="102"><b></b></th>
         <th  width="200">Skalica</th>
@@ -201,16 +162,74 @@
         <td align="center" width="102" style="font-size: 20px;"><b>4:3 sn</b></td>
         <td align="center" width="200">&nbsp;<img src="images/trencin.png" height="38"></a></td>
       </tr>
-      </tbody> 
-    </table>  
+      </tbody>
+    </table> 
+
+
+<br>
+<br>
+<br>
+
+<table class="table-responsive-mvp">
+  <thead>
+    <th>Najproduktívnejší hráč kola</th>
+    <th></th>
+    <th>Body</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="name" align="left"style="border-bottom: 2px solid #C8C8C8;">&nbsp;<img src="images/nat/svk.gif">&nbsp;&nbsp;Radúz Rišňovský&nbsp;&nbsp;<img src="images/sports-medal.png" height="22" ></td>
+      <td style="border-bottom: 2px solid #C8C8C8;"><img src="images/trencin.png" height="20"></td>
+      <td align="center"style="border-bottom: 2px solid #C8C8C8;"><b>3</b></td>
+    </tr>
+   
+  </tbody>
+
+</table>
+
+
    </div>
 
-</div>
+
 
 
 <style type="text/css">
 
-th {
+  .novinky-info{
+    width: 490px;
+    background-color: rgb(153, 163, 164);
+    font-family: arial;
+    font-size: 15px;
+    color: #111;
+    line-height: 24px;
+    color: white; 
+    float: right;
+ }
+
+
+.table-responsive{
+  width: 850px;
+  margin: 0 auto;
+  background-color: #DFDFDF;
+  padding-bottom: 20px;
+  padding-top: 20px;
+
+}
+
+.table-results{
+  margin: 0 auto;
+  width: 300px;
+  float: left;
+  padding-bottom: 20px;
+}
+.table-responsive-mvp{
+  margin: 0 auto;
+  width: auto;
+  padding-top: 20px;
+
+}
+
+  th {
     text-align: center;
   }
 
@@ -218,39 +237,37 @@ th {
     background-color: grey;
   }
 
-  #tabulka{
-
-    margin: 0 auto;
-  }
-
-.model1{
-  padding-top: 10px;
-  padding-bottom: 30px;
-  padding-left: 18px;
-}
-
-
-
- div.wrapper {
-        
-        width: 800px;
-        margin: 0 auto;
-        height: 700px; // change this to desired height
-        padding-left: 300px;
-
-        
+  th{
+  background-color: #1b1e24;
+  color: white;
+  text-align: center;
+  border-bottom: 2px solid grey;
 
 }
 
 
 
-div.container_table{
-       position:relative;
-       left:287px;
-       width: 300px;
-       height: 500px;      
-       background-color: #424949;
-    }
+
+
+@media only screen and (max-width: 760px){ 
+
+.table-results{
+  display: none;
+}
+.table-responsive-mvp{
+  display: none;
+
+}
+.novinky-info{
+  margin: 0 auto;
+  width: 100%;
+}
+.table-responsive{
+  width: 100%;
+  margin: 0 auto;
+}
+
+}  
 
 </style>
 

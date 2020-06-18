@@ -21,12 +21,6 @@ body{
 
 }
 
-.novinky-info{
-  width: 100%;
-  background-color: rgb(153, 163, 164);
-  
-
-}
 
 .img-info h2 {
   padding: 30px 30px 20px;
@@ -36,14 +30,6 @@ body{
   line-height: 44px;
 }
 
-.novinky-info p {
-  padding: 0px 30px 20px;
-  font-family: arial;
-  font-size: 15px;
-  color: #111;
-  line-height: 24px;
-  color: white; 
-}
 
 .img-kosice{
   /*width: 100%;*/
@@ -101,13 +87,7 @@ tr.z:nth-child(even){background-color: #e56700}
   padding-bottom: 30px;
 }
 
-.novinky-info h2 {
-  padding: 20px 0px 0px;
-}
-.novinky-info p {
-  padding: 30px 10px 20px;
- 
-}
+
 .st_table_header{
   display: none;
 }
@@ -117,9 +97,7 @@ tr.z:nth-child(even){background-color: #e56700}
 }
 
 @media only screen and (min-width: 1000px){
-.wrapper{
-  width: 1000px;
-}
+
 .novinky-info{
   width: 50%;
   float: right;
@@ -171,4 +149,11 @@ h3{
 
 #container{
   display: none;
+}
+.table-results{
+  display: none;
+}
+.table-responsive-mvp{
+  display: none;
+
 }

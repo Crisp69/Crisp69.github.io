@@ -12,7 +12,7 @@
 
 
 <header>
-  <nav class="navbar navbar-inverse">
+  <nav class="navbar navbar-inverse" class="navbar-responsive" style="width: 850px; margin: 0 auto;">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">TIPSPORT LIGA</a>
@@ -20,18 +20,8 @@
     <ul class="nav navbar-nav">
       <li class="active"><a href="index.html">Home</a></li>
       <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Novinky <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="novinky.html" style="color: #BD0000; background-color: #222"><b>Zo sveta turnaja</b></a></li>
-            <li><a href="1kolo.html" style="color: #114f83; background-color: #222"><b>1. kolo</b></a></li>
-            <li><a href="2kolo.html" style="color: #114f83; background-color: #222"><b>2. kolo</b></a></li>
-            <li><a href="3kolo.html"style="color: #114f83; background-color: #222"><b>3. kolo</b></a></li>
-            <li><a href="4kolo.html"style="color: #114f83; background-color: #222"><b>4. kolo</b></a></li>
-            <li><a href="5kolo.html"style="color: #114f83; background-color: #222"><b>5. kolo</b></a></li>
-            <li><a href="7kolo.html"style="color: #114f83; background-color: #222"><b>7. kolo</b></a></li>
-         </ul>
-        </li>
-     <li><a href="zapasy.html">Zápasy</a></li>
+      <li><a href="novinky.html" style=" background-color: #222"><b>Novinky</b></a></li>
+      <li><a href="zapasy.html">Zápasy</a></li>
       <li><a href="playoff.html">Play-off</a></li>
       <li><a href="tabulky.html" style="color: white"><b>Tabuľky</a></b></li>
       <li><a href="statistiky.html" style="color: white"><b>Štatistiky</b></a></li>
@@ -50,12 +40,20 @@
 </nav>
 </header>
 
-<div class="container" style=" height: 999px; overflow: auto;">
 
-   <article class="novinky-info" style="background-color: #424949;border: 3px solid #2b2929;">
-    <h2 align="center" style="color: white"><img src="images/tplogo.png" height="50" align="center"> Novinky zo sveta turnaja</h2>
-
+<div class="table-responsive">
    
+   <article class="novinky-info"style="height: 800px; overflow-y:scroll;">
+
+      <h2 align="center" style="color: white"><img src="images/tplogo.png" height="50" align="center"> Novinky zo sveta turnaja</h2>
+      <h3><a href="7kolo.html">Review 7.kolo - výsledky + článok</a></h3>
+      <h3><a href="6kolo.html">Review 6.kolo - výsledky + článok</a></h3>
+      <h3><a href="5kolo.html">Review 5.kolo - výsledky + článok</a></h3> 
+      <h3><a href="4kolo.html">Review 4.kolo - výsledky + článok</a></h3> 
+      <h3><a href="3kolo.html">Review 3.kolo - výsledky + článok</a></h3> 
+    
+    
+    
 
     <h4 align="left" style="color: #F91313">&nbsp;Druhý víkend je za nami</h4>
 
@@ -67,26 +65,27 @@
 
       <h4 align="left" style="color: #F91313">&nbsp;Prvý víkend je za nami</h4>
       <h5>Turnaj sa oficiálne začal 22.5.2020 a zatiaľ sa odohrali tri kolá z trinástich. Za ten čas sme stihli vidieť nie jedno derby. Bystrica porazila Slovan a Poprad vo východnom derby porazil Košice. Taktiež sme vyhlásili najproduktívnejších hráčov jednotlivých kôl, zistili kto sú najšikovnejší hráči v tíme a ako tak odhadnúť sily naších súperov. Niektorí su s výsledkami nad mieru spokojný a niektorí sa posťažovali. Manažéri tak majú možnosť začať pripravovať jednotlivé taktiky na nasledujúci víkend proti svojím súperom. Čo sa stalo v jednotlivých kolách sa bližšie dočítate v sekcii novinky - #.kolo.</h5> 
+       <h3><a href="2kolo.html">Review 2.kolo - výsledky + článok</a></h3>  
+       <h3><a href="1kolo.html">Review 1.kolo - výsledky + článok</a></h3> 
        
-
-      
-
-   </article>
- </div>
+    </article>
 
 
 
-  <div class="container_table" style="border: 3px solid #2b2929;">
-    
-  <table style="margin: 0 auto;" id="tabulka-hraci" width="285">
+  
+
+  <table class="table-results">
   <thead>
-    <th>Najproduktívnejší hráči kôl</th>
-    <th></th>
-    <th>Kolo</th>
-    <th>Body</th>
-  </thead>
-  <tbody>
     <tr>
+      <th>Najproduktívnejší hráči</th>
+      <th></th>
+      <th>Kolo</th>
+      <th>Body</th>
+    </tr>
+  </thead>
+
+  <tbody>
+   <tr>
       <tr>
       <td align="left"style="border-bottom: 2px solid #C8C8C8;" class="name" align="left">&nbsp;<img src="images/sports-medal.png" height="22" >&nbsp;&nbsp;Kliment Geffert&nbsp;&nbsp;<img src="images/nat/svk.gif"></td>
       <td style="border-bottom: 2px solid #C8C8C8;"><img src="images/piestany.png" height="17"></td>
@@ -140,92 +139,59 @@
       <td align="center"style="border-bottom: 2px solid #C8C8C8;"><b>9.</b></td>
       <td align="center"style="border-bottom: 2px solid #C8C8C8;"><b>3</b></td>
     </tr>  
-  </tbody>
+      </tbody> 
+    </table> 
 
-</table>
 
 <br>
-<br>
-      <table class="top_v" style="margin: 0 auto;">
-       
-         <thead>
-            
-            <th width="30"></th>
-            <th width="150" style= "text-align: center;">TOP5 Index šikovnosti</th>
-            <th width="50" style= "text-align: center;"></th>
-            <th width="50" style= "text-align: center; border-left: 2px solid grey;">IŠ</th>
-         </thead>
 
-         <tbody>
-          <tr class="z">
-               <td align="center">1.</td>
-               <td><img src="images/nat/svk.gif"> Martin Puška </td>
-               <td  align="center"><img src="images/piestany.png" height="19"></td>
-               <td style="border-bottom: 2px solid grey;" align="center">557</td>
-            </tr>
-            <tr>
-               <td align="center">2.</td>
-               <td><img src="images/nat/cz.gif"> Marin Horák </td>
-               <td align="center"><img src="images/poprad.png" height="22"></td>
-               <td style="border-bottom: 2px solid grey;" align="center">513</td>
-            </tr>
-            <tr class="z">
-               <td align="center">3.</td>
-               <td><img src="images/nat/sve.gif"> Pontus Lindgren </td>
-               <td align="center"><img src="images/trencin.png" height="22"></td>
-               <td style="border-bottom: 2px solid grey;" align="center">507</td>
-            </tr>
-            <tr>
-               <td align="center">5.</td>
-               <td><img src="images/nat/svk.gif"> Andrej Mészaroš </td>
-               <td align="center"><img src="images/kosice.png" height="22"></td>
-               <td style="border-bottom: 2px solid grey;" align="center">459</td>
-            </tr>
-            <tr class="z">
-               <td align="center">4.</td>
-               <td><img src="images/nat/svk.gif"> Kliment Geffert </td>
-               <td align="center"><img src="images/piestany.png" height="19"></td>
-               <td style="border-bottom: 2px solid grey;" align="center">458</td>
-            </tr>
+ <img class="model1" src="images/model1.jpg" height="390">
 
-            <tr>
-          
-         </tbody>
-      </table>
 
-      <br>
 
-      
-         
-          <div id="txt" align="center" style="color: white;"></div>
-         <!--<p id="demo" align="center" style="color: white;"></p>-->
-
-          <img class="model1" src="images/model1.jpg" height="390">
-      
-     
    </div>
 
-</div>
+
+
+
+
 
 
 
 <style type="text/css">
 
+  .novinky-info{
+    width: 490px;
+    background-color: rgb(153, 163, 164);
+    font-family: arial;
+    font-size: 15px;
+    color: #111;
+    line-height: 24px;
+    color: white; 
+    float: right;
+ }
 
 
-h5{
-  color: white;
-  padding-left: 5px;
+.table-responsive{
+  width: 850px;
+  margin: 0 auto;
+  background-color: #DFDFDF;
+  padding-bottom: 20px;
+  padding-top: 20px;
+
 }
-h4{
-  color: black;
-  padding-left: 5px;
 
+.table-results{
+  margin: 0 auto;
+  width: 300px;
+  float: left;
+  padding-bottom: 20px;
 }
+.table-responsive-mvp{
+  margin: 0 auto;
+  width: auto;
+  padding-top: 20px;
 
-a {
-  text-decoration: none;
-  color: white;
 }
 
   th {
@@ -235,42 +201,46 @@ a {
   td{
     background-color: grey;
   }
-td.none{
-  background-color: none;
-  color: black;
+
+  th{
+  background-color: #1b1e24;
+  color: white;
+  text-align: center;
+  border-bottom: 2px solid grey;
+
 }
-  #tabulka{
 
-    margin: 0 auto;
-  }
 
- 
 
+
+
+@media only screen and (max-width: 760px){ 
+
+.table-results{
+  display: none;
+}
+.table-responsive-mvp{
+  display: none;
+
+}
+.novinky-info{
+  margin: 0 auto;
+  width: 100%;
+}
+.table-responsive{
+  width: 100%;
+  margin: 0 auto;
+}
 .model1{
-  padding-top: 10px;
-  padding-bottom: 30px;
-  padding-left: 18px;
+  display: none;
 }
 
-
- div.wrapper {
-        overflow:hidden;
-        overflow-y: scroll;
-        width: 800px;
-        margin: 0 auto;
-        height: 700px; // change this to desired height
-        padding-left: 300px;
-        
-
+.navbar-responsive{
+  width: 100%;
+  margin: 0 auto;
 }
 
-div.container_table{
-       position:relative;
-       left:279px;
-       width: 300px;      
-       background-color: #424949;
-
-    }
+}  
 
 </style>
 
@@ -280,59 +250,5 @@ div.container_table{
 
 
 
-
-
-<script type="text/javascript">
-  
-
-// Set the date we're counting down to
-var countDownDate = new Date("May 22, 2020 20:00:00").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get today's date and time
-  var now = new Date().getTime();
-
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  // Display the result in the element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-
-  // If the count down is finished, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
-
-
-
-
-function startTime() {
-  var today = new Date();
-  var h = today.getHours();
-  var m = today.getMinutes();
-  var s = today.getSeconds();
-  m = checkTime(m);
-  s = checkTime(s);
-  document.getElementById('txt').innerHTML =
-  h + ":" + m + ":" + s;
-  var t = setTimeout(startTime, 500);
-}
-function checkTime(i) {
-  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-  return i;
-}
-
-</script>
 </body>
 <html>
