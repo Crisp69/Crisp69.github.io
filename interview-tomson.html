@@ -11,27 +11,28 @@
 <body style="background: url(images/pohar1.jpg);"onload="startTime()">
 
 
-<header>
-  <nav class="navbar navbar-inverse">
+ <header>
+  <nav class="navbar navbar-inverse" style="width: 800px; margin: 0 auto;">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">TIPSPORT LIGA</a>
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="index.html">Home</a></li>
-     <li><a href="novinky.html" style=" background-color: #222"><b>Novinky</b></a></li>
+      <li><a href="novinky.html" style=" background-color: #222"><b>Novinky</b></a></li>
       <li><a href="zapasy.html">Zápasy</a></li>
       <li><a href="playoff.html">Play-off</a></li>
       <li><a href="tabulky.html" style="color: white"><b>Tabuľky</a></b></li>
       <li><a href="statistiky.html" style="color: white"><b>Štatistiky</b></a></li>
+ 
       <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Viac <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><b>Viac</b><span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="halloffame.html" style="color: #114f83; background-color: #222"><b>Víťazovia ročníkov</b></a></li> <li><a href="ucastnici.html">Účastníci </a></li> 
             <li><a href="uspechy.html">Úspechy </a></li>
             <li><a href="medailoveporadie.html">Medailové poradie</a></li>
          </ul>
-      </li>    
+        </li>    
       <li><a href="pravidla.html">Pravidlá </a></li>
       <li><a href="https://www.hockeyarena.net/sk/index.php?p=manager_discussion_posts.php&table_id=499794&last_seen=0">Fórum</a></li>
 
@@ -45,6 +46,7 @@
    <article class="novinky-info" style="background-color: #424949;border: 3px solid #2b2929;">
         
     <h3 align="center" style="color: white; padding-left: 5px;"> Interview 🔊 /manažér <b style="color: #317DF9">tomson - HC Košice</b>/ </h3>
+    <div  align="center"><img class="model1" src="images/model1.jpg" height="390"></div>
     <br>
     <h5> V prvom rade by som chcel manažérovi poďakovať, že bol ochotný spraviť interview a nechať nás nahliadnúť bližšie do jeho tímu. Zároveň som z jeho odpovedí veľmi nadšený a som rád, že k tomu pristúpil takto :)</h5>
     <br>
@@ -89,24 +91,6 @@
    </article>
  </div>
 
-
-
-  <div class="container_table" style="border: 3px solid #2b2929;">
- 
-
-      <br>
-
-      
-         
-          <div id="txt" align="center" style="color: white;"></div>
-         <!--<p id="demo" align="center" style="color: white;"></p>-->
-
-          <img class="model1" src="images/model1.jpg" height="390">
-      
-     
-   </div>
-
-</div>
 
 
 
@@ -170,6 +154,12 @@ div.container_table{
 
     }
 
+    @media only screen and (max-width: 768px){
+   .model1{
+    display: none;
+   } 
+}
+
 </style>
 
 
@@ -179,63 +169,5 @@ div.container_table{
 
 
 
-
-<script type="text/javascript">
-  
-
-// Set the date we're counting down to
-var countDownDate = new Date("May 22, 2020 20:00:00").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get today's date and time
-  var now = new Date().getTime();
-
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  // Display the result in the element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-
-  // If the count down is finished, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
-
-
-
-
-function startTime() {
-  var today = new Date();
-  var h = today.getHours();
-  var m = today.getMinutes();
-  var s = today.getSeconds();
-  m = checkTime(m);
-  s = checkTime(s);
-  document.getElementById('txt').innerHTML =
-  h + ":" + m + ":" + s;
-  var t = setTimeout(startTime, 500);
-}
-function checkTime(i) {
-  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-  return i;
-}
-
-
-
-
-
-
-</script>
 </body>
 <html>
