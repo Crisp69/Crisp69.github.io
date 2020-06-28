@@ -57,8 +57,9 @@
     <a class="round" href="12kolo.html">Review 12.kolo - výsledky + článok</a>
     <ul>
      <li class="news" style="font-size: 16px;">Posledné dva kolá základnej časti sú tu. Michalovce pred play-off chytili neskutočnú formu. Výmena brankárskej jednotky tímu značne pomohla. Zápas Spišská Piešťany sa neodohral. Dohrávka naplánovaná na 1.7.2020  Streda. Trenčín si v 12.kole poistil semifinálovú priečku.</li>
-     <img src="images/michalovce-cheer2.jpg" height="300" style="height: 280px; padding-top: 5px; padding-bottom: 5px;"></li>
+     </li>
     </ul> 
+    <div class="michalovce-cheer2" ><img src="images/michalovce-cheer2.jpg" height="300"></div>
   </div>
    
     <div style="border-bottom: 2px solid grey">
@@ -73,8 +74,9 @@
     <a class="round" href="11kolo.html">Review 11.kolo - výsledky + článok</a><br><a class="round" href="10kolo.html">Review 10.kolo - výsledky + článok</a>
     <ul>
      <li class="news" style="font-size: 16px;">Pozrite si ako dopadlo 10. a 11.kolo. Taktiež sa blíži play-off. Možno je čas poobzerať sa po nejakých posilách? Alebo svojmu momentálnemu družstvu veríte a nepotrebujete žiadneho strelca do útoku či siláka do obrany, ktorý by chránil brankára pred svojími súpermi? </li>
-     <img src="images/zvolen-cheer.jpg" height="300" style="padding-left: 100px; padding-top: 5px; padding-bottom: 5px;"></li>
+     </li>
     </ul> 
+    <div class="zvolen-cheer"><img src="images/zvolen-cheer.jpg" height="300"></div>
   </div>
 
    <div style="border-bottom: 2px solid grey">   
@@ -384,7 +386,30 @@ li.news{
     padding:0;
 }
 
+
+@media only screen and (min-width: 760px){ 
+  .michalovce-cheer2{
+    padding-left: 30px;
+    padding-bottom: 5px;
+  }
+  .zvolen-cheer{
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+
+
 @media only screen and (max-width: 760px){ 
+  .zvolen-cheer{
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .michalovce-cheer2{
+     width: 100%;
+    margin: 0 auto;
+  }
 
   .mvp-responsive{
     display: none;
