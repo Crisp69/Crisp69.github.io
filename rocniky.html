@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tipsport-turnaj - Zapasy</title>
-  
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  
-
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ročníky</title>
+	
+  	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 </head>
-
 <body style="background: url(images/pohar1.jpg);">
 
-<header>
+	<header>
   <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -31,59 +29,93 @@
             <li><a href="uspechy.html">Úspechy </a></li>
             <li><a href="medailoveporadie.html">Medailové poradie</a></li>
          </ul>
-        </li>    
+        </li>   
+         
+      <li><a href="rocniky.html">Ročníky </a></li> 
       <li><a href="pravidla.html">Pravidlá </a></li>
-      <li><a href="rocniky.html">Ročníky </a></li>
+      
 
     </ul>
   </div>
 </nav>
 </header>
 
-  
-    
-    <div class="play-off-bracket" align="center">
-      <a href="playoff.html">Play-off Pavúk</a> <a href="play-off-rozpis.html">Play-off Rozpis</a>
-      <img class="play-off-bracket-picture" src="images/play-off.jpg" style="padding-top: 35px;">
-    </div>
 
- 
-  
-  
-  <style type="text/css">
+<div class="container">
+    <br>
+  <div class="rocnik-0">
+    <a class="odkaz"  href="0rocnik.html" style="text-decoration-style: none;"><img class="model" class="element" src="images/play-off-cheer.jpg"></a>
+      <div class="centered">
+       <a class="odkaz"  href="0rocnik.html" style="text-decoration-style: none;">0.ročník</a>
+      </div>
+  </div>
+</div>
 
-    .navbar{
-    width:40% !important;
+
+
+
+
+
+
+<style type="text/css">
+  .rocnik-0 {
+  position: relative;
+  text-align: center;
+  color: white;
+
+}
+
+.element{
+  transition: opacity 300ms ease-in-out 1s;
+}
+
+.centered {
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.container{
+	width: 800px;
+	background-color: #DFDFDF;
+	height:  700px;
+   text-align: center;
+}
+
+.odkaz{
+  font-size: 60px;
+  color: black;
+}
+  
+.model{
+  height: 350px;
+}
+
+.rocniky{
+  width: 250px;
+  margin-right: auto;
+  margin-left: auto;
+  border-left:  4px  solid #00985B;
+  border-right: 4px  solid #00985B;
+  border-top:  4px  solid #00985B;
+  border-bottom:  4px  solid #00985B; 
+  font-size: 25px;
+}
+
+.navbar{
+    width:42% !important;
     margin:0px auto;
     left:0;
     right:0;
     padding:0;
 }
 
-.play-off-bracket{
-  width: 60%;
-  margin: 0 auto;
-  background-color: #DFDFDF;
-}
-.play-off-bracket-picture{
-  width: 1100px;
-  height: 800px;
-  margin: 0 auto;
-}
-  
+ 
 
-  @media only screen and (max-width: 768px){
 
-    .play-off-bracket{
-    overflow-x: auto;
-    width: 100%;
-    margin: 0 auto;
-    background: none;
-    border: none;
-     background-color: #DFDFDF;
-  }
-  
-
+@media only screen and (max-width: 768px){
   .navbar{
     width:100% !important;
     margin:0px auto;
@@ -91,13 +123,16 @@
     right:0;
     padding:0;
 }
-
-  </style>
+.container{
+  overflow-x: auto;
+    width: 100%;
+    margin: 0 auto;
+    
+   
+}
 
   
+</style>
 
-    
-<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
 </html>
