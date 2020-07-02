@@ -14,7 +14,6 @@
   <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      
       <a class="navbar-brand" href="#">TIPSPORT LIGA</a>
     </div>
     <ul class="nav navbar-nav">
@@ -27,21 +26,23 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Viac <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="halloffame.html" style="color: #114f83; "><b>Majstri</b></a></li> 
+            <li><a href="halloffame.html" style="color: #114f83; "><b>Majstri</b></a></li>
             <li><a href="ucastnici.html">Účastníci </a></li> 
             <li><a href="uspechy.html">Úspechy </a></li>
             <li><a href="medailoveporadie.html">Medailové poradie</a></li>
          </ul>
-        </li>   
+        </li>  
+         
       <li><a href="pravidla.html">Pravidlá </a></li>
-      <li><a href="rocniky.html">Ročníky </a></li>
+      <li><a href="rocniky.html">Ročníky </a></li> 
 
     </ul>
   </div>
 </nav>
 </header>
 
-<div class="container">
+
+<div class="table-responsive">
    <article class="novinky-info">      
         <p align="center" style="font-family: italic;font-size: 20px;color: white; "><b> Tento turnaj je zameraný len na tímy hrajúce profesionálne Slovenské ligy. Každý tento tím má tak možnosť si zahrať proti svojím odvekým rivalom a zároveň hrať o <b style="color: #DAA520; font-family: italic; font-size: 20px;">Pohár Vladimíra Dzurillu</b></b></p>
         <p align="center" style="font-family: italic;font-size: 20px;color: white; "><b> Chceš sa zúčastniť? Kľudne napíš :) </b></b></p>
@@ -53,11 +54,6 @@
      
    </article>
 
-
-
-  
-
-</div>
 </div>
 
 
@@ -76,48 +72,26 @@
     height: 100px;
     padding-top: 25px;
 }
+.table-responsive{
+  width: 54.4%;
+  margin: 0 auto;
+
+}
 
   .novinky-info{
+    padding-top: 280px;
     background-color: rgb(0,0,0, 0.5);
+    width: 100%;
+    margin: 0 auto;
+    height: 800px;
+
   }
   
   p{
     text-shadow: 2px 2px black;
   }
 
-  /*.container{
-    width: 1700px;
-    margin: 50px auto 0;
-    display: table;
-    box-sizing: border-box;
-  */}
 
-  .row{
-    margin: 20px;
-    border-left: 10px;
-  }
-
-  .container{
-   
-    width: 54.4%;
-    margin: 0 auto;
-
-
-  }
-
-  
-
-
-
-table.uvod{
-  text-align: left;
-
-
-}
-
-p{
-  color: 
-}
 
 @media only screen and (max-width: 760px){ 
   .navbar{
@@ -126,7 +100,12 @@ p{
     left:0;
     right:0;
     padding:0;
+   
 }
+.table-responsive{
+  width: 100%;
+}
+
 }
 
 </style>
