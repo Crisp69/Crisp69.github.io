@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ss</title>
+</head>
+<body>
+<div id="slider">
+        	<figure>
+        		<img src="images/cheer.jpg">
+        		<img src="images/ke_ch.jpg">
+        		<img src="images/bystrica-cheer.jpg">
+        		<img src="images/michalovce-cheer.jpg">
+
+        	</figure>
+        	
+        </div>
+
+
+
+
+
+<style type="text/css">
+
+
+#slider {
+    overflow: hidden;
+}
+    #slider figure {
+        position: relative;
+        width: 1000%; 
+        margin: 0;
+        left: 0;
+        animation: 20s slider infinite;
+
+    }
+        #slider figure img {
+            width: 200px;
+            height: 150px; 
+            float: left;
+            max-width: 100%;
+            min-height: 100%;
+            object-fit: cover;
+        }
+
+        
+
+@keyframes slider {
+    0% { 
+    	left: 0;
+    } 
+    33% { 
+    	left: -50px; 
+    } 
+    66% {
+    	left: 0;
+    } 
+    100% { 
+    	left: 0; 
+    }
+ 
+}
+</style>
+
+</body>
+</html>
