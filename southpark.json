@@ -1,0 +1,14 @@
+[
+{
+    "id": 1,
+    "who": "Cartman",
+    "wat": "The Fat one",
+    "cool": 42
+}, 
+{
+    "id": 2,
+    "who": "Kyle",
+    "wat": "Ginger jew",
+    "cool": 50
+}
+]
